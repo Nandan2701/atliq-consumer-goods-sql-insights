@@ -17,8 +17,6 @@ SELECT COUNT(DISTINCT product_code) AS unique_2021_products
     WHERE "date" >= DATE '2020-09-01'
         AND "date" <= DATE '2021-08-31'
 )
-
-)
 select products_in_2020.unique_2020_products ,
        products_in_2021.unique_2021_products ,
        ROUND(
